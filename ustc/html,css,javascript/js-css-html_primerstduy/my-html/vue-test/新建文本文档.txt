@@ -1,0 +1,3 @@
+F:
+cd my-html/vue-test/PB17111609
+npm run dev

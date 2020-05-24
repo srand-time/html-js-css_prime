@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>main-page</title>
+</head>
+
+<body>
+<h1>主页面</h1>
+<h2><a href="/login">登录</a></h2>
+<br>
+<h2><a href="/signup">注册</a></h2>
+<br>
+<form method="post" action="/quit_action/">
+    <button id="btn" type="submit">退出账户</button><br>
+</form>
+<br>
+<form method="post" action="/query_action/">
+    年<input name="YEAR" type="text" placeholder="年" maxlength="4"><br> 
+    月<input name="MONTH" type="text" placeholder="月" maxlength="2"><br>
+    日<input name="DAY" type="text" placeholder="日" maxlength="2"><br>
+    <button id="btn" type="submit">查询日期</button><br>
+    {{ result }}
+    {%  csrf_token  %}
+</form>
+</body>
+
+</html>

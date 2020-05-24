@@ -1,0 +1,34 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+
+<form method="post" action="laowang.php">
+	姓名：<input type="text" id="name"> 
+    密码：<input type="password" id="password">
+    <br>
+    男：<input type="radio" value="m" name="gender">
+    女：<input type="radio" value="f" name="gender">
+    <br>
+    你喜欢：
+    看书<input type="checkbox" value="book" name="hobby">、
+    足球<input type="checkbox" value="soccer" name="hobby">、
+    游泳<input type="checkbox" value="swim" name="hobby">
+    <br>
+    你想要多少工钱：
+    <select name="money">
+    	<option value="500" selected="selected">五百元
+    </option>
+    	<option value="5000">五千元
+    </option>
+		<option value="50000">五万元
+	</option>
+		<option value="500000">五十万元
+	</option>
+	</select>
+    <br>
+    <input type="submit" value="确定" name="submit">
+    <input type="reset" value="重置" name="reset">
+</form>
+
+</html>

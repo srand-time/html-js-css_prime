@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+
+
+<body>
+<p style="color:red">这里文字是红色的。</p>
+<p>最简单粗暴的方法就是直接把css代码写在现有的HTML标签元素的开始标签里面，并且css样式代码要写在style=""双引号中才可以，</p>
+<form method="post" action="save.php">
+<label for="username">用户名:</label>
+	<input type="text" name="username" id="username" value=""/>
+	<label for="pass">密码:</label>
+	<input type="password" name="pass" id="pass" value=""/>
+	<input type="submit" value="确定" name="submit" />
+	<input type="reset" value="重置" name="reset" />
+</form>
+</body>
+</html>

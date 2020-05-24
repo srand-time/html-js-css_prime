@@ -1,0 +1,12 @@
+F:
+cd sk_python/test
+cd 新建文件夹/guest
+
+python manage.py runserver 0.0.0.0:8000
+
+在浏览器中打开   http://127.0.0.1:8000    就可以看到运行结果。
+http://127.0.0.1:8000/index/
+ 
+创建一个django项目
+django-admin startproject xxxx
+3.进入项目，用“python manage.py startapp 应用名”创建应用

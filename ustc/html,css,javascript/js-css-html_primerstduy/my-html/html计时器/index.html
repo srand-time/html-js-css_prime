@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>counter</title>
+    <link herf="style.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <input type="num" name="" placeholder="0" id="hour">	小时
+    <input type="num" name="" placeholder="0" id="min">	分钟
+    <input type="num" name="" placeholder="0" id="sec">	秒
+    <input type="submit" name="" value="开始倒计时" id="isstart">
+
+    <!--<input type="button" id="istart" value="开始倒计时">-->
+    <input type="button" id="istop" value="暂停计时器">
+    <input type="button" id="clean" value="清空计时器">
+    <input type="button" id="isreset" value="重新再计时">
+    <script type="text/javascript">
+        var setid;
+        var time;
+        var attime;
+        function clock() {
+            time = new Date();
+            attime = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+            document.getElementById("clock").value = attime;
+        }
+        var istart = document.getElementById("istart");
+        istart.onclick = function () { setid = setInterval(clock, 100); }
+        var istop = document.getElementById("istop");
+        istop.onclick = function () { clearInterval(setid); }
+    </script>
+
+
+
+    <input type="text" id="count">
+    <input type="button" id="istart2" value="开始正计时">
+    <input type="button" id="istop2" value="暂停计时器">
+    <input type="button" id="isreset2" value="重新再计时">
+    <script type="text/javascript">
+        var seti2;
+        var second = 0;
+        var second2 = 0;
+        var minute = 0;
+        var minute2 = 0;
+        var hour = 0;
+        var hour2 = 0;
+        function startCount() {
+            second2 = second2 + 1;
+            if (second2 == 10) { second = second + 1; second2 = 0; }
+            if (second == 6) { minute2 = minute2 + 1; second = 0; }
+            if (minute2 == 10) { minute = minute + 1; minute2 = 0; }
+            if (minute == 6) { hour2 = hour2 + 1; minute = 0; }
+            if (hour2 == 10) { hour = hour + 1; hour2 = 0; }
+            attime2 = hour + hour2 + ":" + minute + minute2 + ":" + second + second2;
+            document.getElementById('count').value = attime2;
+            seti2 = setTimeout("startCount()", 1000);
+        }
+        var istart2 = document.getElementById("istart2");
+        istart2.onclick = function () {
+            startCount();
+        }
+        var istop2 = document.getElementById("istop2");
+        istop2.onclick = function () {
+            clearTimeout(seti2);
+        }
+
+        var isreset2 = document.getElementById("isreset2");
+        isreset2.onclick = function () {
+            second2 = 0; second = 0; minute2 = 0; minute = 0; hour2 = 0; hour = 0;
+        }
+    </script>
+</body>
+</html>

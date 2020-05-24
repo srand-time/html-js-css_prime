@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>counter</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+</head>
+
+
+
+<body>
+    <div id="input-text">
+        <input type="number" name="" placeholder="0" id="hour" maxlength="2"
+               onkeyup="this.value=this.value.replace(/\D/g,'')">     
+        <label for="hour" id="hour-label">时</label>
+        <input type="number" name="" placeholder="0" id="minute" maxlength="2"
+               onkeyup="this.value=this.value.replace(/\D/g,'')">	
+        <label for="minute" id="minute-label">分</label>
+        <input type="number" name="" placeholder="0" id="second" maxlength="2" 
+            onkeyup="this.value=this.value.replace(/\D/g,'')">	
+        <label for="second" id="second-label">秒</label>
+
+        <input type="button" value="开始倒计时" id="countdown">
+        <input type="button" value="开始正计时" id="countup">
+
+        <input type="button" id="resume" value="恢复计时器" >
+        <input type="button" id="clear" value="清空倒计时" >
+        <input type="button" id="restart" value="重新再计时">    
+        <input type="button" id="pause" value="暂停计时器">
+    </div>
+
+    <div id="show-the-time2">
+        <span id="time">00:00:00</span>
+    </div>
+
+    <div>
+        <span id="hint"></span>
+    </div>
+    <script type="text/javascript" src="app.js" charset="utf-8"></script>
+</body>
+</html>

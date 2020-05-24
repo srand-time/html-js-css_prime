@@ -1,0 +1,165 @@
+
+body{
+    background-color:#F2F4F7;
+}
+
+#input-text {
+    width: 1300px;
+    height:70px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, "PingFang SC", sans-serif;
+    background-color:#79A597;
+}
+
+#show-the-time2 {
+    font-family: PTMono-Bold, "PT Mono", monospace;
+    font-weight: 700;
+    font-size: 200px;
+    color: #333333;
+    position: absolute;
+    left: 131px;
+    top: 197px;
+}
+
+#countup {
+    border-radius: 5px;
+    border-color: #2188E9;
+    background-color: #2188E9;
+    width: 98px;
+    height: 40px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 310px;
+    top: 15px;
+}
+
+#countdown {
+    border-color: #2188E9;
+    background-color: #2188E9;
+    width: 98px;
+    height: 40px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 428px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+#pause {
+    border-color: #2188E9;
+    background-color: #2188E9;
+    width: 98px;
+    height: 40px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 227px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+#resume {
+    border-color: #2188E9;
+    background-color: #2188E9;
+    width: 98px;
+    height: 40px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 227px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+#clear {
+    border-color: #DD2E1D;
+    background-color: #DD2E1D;
+    width: 98px;
+    height: 40px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 964px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+#restart {
+    border-color: #FFB020;
+    background-color: #FFB020;
+    width: 98px;
+    height: 40px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 1082px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+#hint {
+    position: absolute;
+    left: 40px;
+    top: 24px;
+    width: 167px;
+    height: 22px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, "PingFang SC", sans-serif;
+    color: #FFFFFF;
+}
+#hour {
+    box-shadow: 0px,2px,4px,0px;
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    left: 40px;
+    top: 15px;
+    color: #AFAFAF;
+}
+
+#hour-label {
+    position: absolute;
+    left: 69px;
+    top: 24px;
+    width: 32px;
+    height: 22px;
+    color: #222222;
+    text-align: right;
+}
+
+#minute {
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    left: 130px;
+    top: 15px;
+    color: #AFAFAF;
+}
+
+#minute-label {
+    position: absolute;
+    left: 159px;
+    top: 24px;
+    width: 32px;
+    height: 22px;
+    color: #222222;
+    text-align: right;
+}
+
+#second {
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    left: 220px;
+    top: 15px;
+    color: #AFAFAF;
+}
+
+#second-label {
+    position: absolute;
+    left: 249px;
+    top: 24px;
+    width: 32px;
+    height: 22px;
+    color: #222222;
+    text-align: right;
+}
